@@ -1,0 +1,21 @@
+{
+  "values":[
+    "minecraft:air",
+    "minecraft:water",
+    "#minecraft:rails",
+    "#minecraft:buttons",
+    "#strangecurse:carpets",
+    "#minecraft:coral_plants",
+    "#minecraft:corals",
+    "#minecraft:flower_pots",
+    "#minecraft:flowers",
+    "#minecraft:small_flowers",
+    "#minecraft:tall_flowers",
+    "#minecraft:saplings",
+    "minecraft:snow",
+    "minecraft:tall_grass",
+    "minecraft:grass",
+    "minecraft:sugar_cane",
+    "minecraft:cave_air"
+  ]
+}

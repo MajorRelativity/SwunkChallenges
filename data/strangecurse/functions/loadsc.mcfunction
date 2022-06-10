@@ -6,9 +6,10 @@
 # - death.mcfunction initiates the death process
 # - deathportalc.mcfunction chooses the location for the portal
 # - deathportals.mcfunctino is used to control the teleportation of the scout area_effect_cloud dscout_sc
-## Kill Old Markers:
-# Removes old armor stands and area affect clouds
 
+## Kill Old Markers and Reset Scoreboard:
+# Removes old armor stands and area affect clouds
+scoreboard objectives remove VariablesI
 
 ## Scoreboard Creation:
 # VariablesI is a scoreboard that contains all variables that contain simple information
@@ -20,8 +21,8 @@
 scoreboard objectives add VariablesI dummy
 scoreboard players set deathIP_sc VariablesI 0
 scoreboard players set dair_sc VariablesI 1
-scoreboard players set dCountS VariablesI 0
+scoreboard players set dCountC VariablesI 0
 
-scoreboard objectives add DummyNumber dummy
-scoreboard players set one DummyNumber 1
-scoreboard players set twelve DummyNumber 12
+
+## Test Purposes:
+scoreboard objectives setdisplay sidebar VariablesI

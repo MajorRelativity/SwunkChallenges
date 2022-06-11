@@ -25,5 +25,5 @@ execute if score @s VariablesI matches 5 at @s align xyz run summon area_effect_
 ## Negative Y:
 execute if score @s VariablesI matches 6 at @s align xyz run summon area_effect_cloud ~.5 ~ ~.5 {CustomName:'[{"text":"deathportal"}]',Duration: 1200}
 
-## Positive X:
-#execute if score @s VariablesI matches 7 at @s align x run summon area_effect_cloud ~1 ~ ~ {CustomName:'[{"text":"deathportal"}]',Duration: 1200}
+## No Block:
+execute if score @s VariablesI matches 7 at @s align xyz run summon area_effect_cloud ~.5 ~.5 ~.5 {CustomName:'[{"text":"deathportal"}]',Duration: 1200}

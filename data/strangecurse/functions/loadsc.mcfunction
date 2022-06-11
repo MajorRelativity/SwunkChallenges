@@ -10,9 +10,14 @@
 # - scounttp.mcfunction moves the scout. It teleports the armor stand if a wall is found, restarts deathportals.mcfunction if dCountC is less than 30,
 #   or restarts the process with deeathportalspread.mcfunction
 
-## Kill Old Markers and Reset Scoreboard:
+## Kill Old Markers, Reset Scoreboard, and Clear Schedule:
 # Removes old armor stands and area affect clouds
+
+#Scoreboard
 scoreboard objectives remove VariablesI
+
+# Schedule
+schedule clear strangecurse:death/alignportal/runportalloop
 
 ## Scoreboard Creation:
 # VariablesI is a scoreboard that contains all variables that contain simple information

@@ -2,7 +2,6 @@
 # Desctiption: Used to control the teleportation of the scout area_effect_cloud dscout_sc
 
 ## Look for Wall:
-say deathportals running
 scoreboard players set @e[type=area_effect_cloud,name="dscout_sc"] VariablesI 0
 execute as @e[type=area_effect_cloud,name="dscout_sc"] at @s unless block ~1 ~ ~ #strangecurse:nonsolid run scoreboard players set @e[type=area_effect_cloud,name="dscout_sc"] VariablesI 1 
 execute as @e[type=area_effect_cloud,name="dscout_sc"] at @s unless block ~-1 ~ ~ #strangecurse:nonsolid run scoreboard players set @e[type=area_effect_cloud,name="dscout_sc"] VariablesI 2

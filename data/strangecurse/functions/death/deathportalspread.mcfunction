@@ -25,3 +25,4 @@ execute unless score dCountS VariablesI matches 7 run schedule function strangec
 
 ## If no Wall or Floor is Found:
 execute if score dCountS VariablesI matches 7 run scoreboard players set @e[type=armor_stand,name="dportal_sc"] VariablesI 7
+execute if score dCountS VariablesI matches 7 as @e[type=armor_stand,name="dportal_sc"] run function strangecurse:death/alignportal/alignportal

@@ -12,6 +12,8 @@
 
 ## Kill Old Markers, Reset Scoreboard, and Clear Schedule:
 # Removes old armor stands and area affect clouds
+kill @e[type=area_effect_cloud,name="deathportal"]
+kill @e[type=armor_stand,name="dportal_sc"]
 
 #Scoreboard
 scoreboard objectives remove VariablesI
@@ -25,12 +27,16 @@ schedule clear strangecurse:death/alignportal/runportalloop
 # - dair_sc is used in deathportals.mcfunction
 # - dCountC counts the # of times the area_effect_cloud scout is teleported in death
 # - dCountS is used to count the # of times the portal armor stand searches for a wall or floor in death
+# - dCountClose is used in counting during the closing of the portal
+# - dCountSculk is used in counting during the closing of the portal
 
 # DummyNumber is a collection of comparison numbers
 scoreboard objectives add VariablesI dummy
 scoreboard players set deathIP_sc VariablesI 0
 scoreboard players set dair_sc VariablesI 1
 scoreboard players set dCountC VariablesI 0
+scoreboard players set dCountClose VariablesI 0
+scoreboard players set dCountSculk VariablesI 0
 
 scoreboard objectives add DummyNumber dummy
 scoreboard players set one DummyNumber 1

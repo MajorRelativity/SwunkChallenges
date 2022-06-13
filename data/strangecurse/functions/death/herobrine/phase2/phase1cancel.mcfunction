@@ -1,0 +1,1 @@
+schedule clear strangecurse:death/herobrine/phase1/phase1m

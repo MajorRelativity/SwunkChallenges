@@ -21,6 +21,8 @@ scoreboard objectives remove VariablesI
 
 # Schedule
 schedule clear strangecurse:death/alignportal/runportalloop
+schedule clear strangecurse:death/herobrine/phase1/phase1m
+schedule clear strangecurse:death/herobrine/phase2/phase2m
 
 ## Scoreboard Creation:
 # VariablesI is a scoreboard that contains all variables that contain simple information
@@ -45,4 +47,4 @@ scoreboard players set one DummyNumber 1
 
 
 ## Test Purposes:
-scoreboard objectives setdisplay sidebar VariablesI
+#scoreboard objectives setdisplay sidebar VariablesI

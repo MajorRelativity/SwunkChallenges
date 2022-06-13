@@ -1,0 +1,19 @@
+Stores the Animation Data for the Datapack:
+
+Custom Model Data # Format: PPMMAAFFF
+PP = Project #
+MM = Model #
+AA = Animation #
+FFFF = Frame #
+
+Projact 01 = StrangeCurse
+    Model 01 = Herobrine
+        Animation 01 = Tpose
+            000 = Tpose
+        Animation 02 = Transition to Swim
+            Starts with 010101000
+            001 - 004 = Switch to Flight
+            005 - 008 = Hands Forward
+            
+        
+            

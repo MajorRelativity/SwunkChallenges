@@ -14,6 +14,7 @@
 # Removes old armor stands and area affect clouds
 kill @e[type=area_effect_cloud,name="deathportal"]
 kill @e[type=armor_stand,name="dportal_sc"]
+kill @e[type=armor_stand,name="herobrine"]
 
 #Scoreboard
 scoreboard objectives remove VariablesI
@@ -37,6 +38,7 @@ scoreboard players set dair_sc VariablesI 1
 scoreboard players set dCountC VariablesI 0
 scoreboard players set dCountClose VariablesI 0
 scoreboard players set dCountSculk VariablesI 0
+scoreboard players set hCountS VariablesI 0
 
 scoreboard objectives add DummyNumber dummy
 scoreboard players set one DummyNumber 1

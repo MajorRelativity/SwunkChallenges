@@ -33,3 +33,6 @@ execute if score @s VariablesI matches 1..6 as @s run function strangecurse:deat
 function strangecurse:death/alignportal/runportalloop
 schedule function strangecurse:death/closeportal/preclose1 25s
 schedule function strangecurse:death/closeportal/preclose2 45s
+
+## Summon Herobrine:
+schedule function strangecurse:death/herobrine/spawn 10t

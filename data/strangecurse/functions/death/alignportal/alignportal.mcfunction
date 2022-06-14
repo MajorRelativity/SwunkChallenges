@@ -8,7 +8,7 @@
 # 7 = no wall or floor, maintain position
 
 ## Portal Effect
-execute at @s run playsound block.end_portal.spawn ambient @a ~ ~ ~ 
+execute at @s run playsound block.end_portal.spawn ambient @a ~ ~ ~ 1000 .7 1
 execute at @s run particle minecraft:explosion ~ ~ ~ .2 .2 .2 3 30
 
 ## X:

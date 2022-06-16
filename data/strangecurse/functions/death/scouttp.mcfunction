@@ -11,9 +11,9 @@ execute if score @s VariablesI matches 0 unless score dCountC VariablesI matches
 execute if score dCountC VariablesI matches 30 run schedule function strangecurse:death/deathportalspread 5t
 
 # If score is not 0:
-execute if score @s VariablesI >= one DummyNumber at @s run tp @e[type=armor_stand,name="dportal_sc"] ~ ~ ~
-execute if score @s VariablesI >= one DummyNumber store result score @e[type=armor_stand,name="dportal_sc"] VariablesI run scoreboard players get @s VariablesI
+execute if score @s VariablesI matches 1.. at @s run tp @e[type=armor_stand,name="dportal_sc"] ~ ~ ~
+execute if score @s VariablesI matches 1.. store result score @e[type=armor_stand,name="dportal_sc"] VariablesI run scoreboard players get @s VariablesI
 
-execute if score @s VariablesI >= one DummyNumber as @e[type=armor_stand,name="dportal_sc"] run function strangecurse:death/alignportal/alignportal
+execute if score @s VariablesI matches 1.. as @e[type=armor_stand,name="dportal_sc"] run function strangecurse:death/alignportal/alignportal
 
  

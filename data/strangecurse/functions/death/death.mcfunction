@@ -5,6 +5,9 @@
 scoreboard players set deathIP_sc VariablesI 1
 scoreboard players set dCountClose VariablesI 0
 
+## Sounds:
+stopsound @s
+
 ## Portal Placement:
 
 scoreboard players set dCountC VariablesI 0

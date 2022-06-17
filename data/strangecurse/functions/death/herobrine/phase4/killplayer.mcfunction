@@ -3,6 +3,9 @@
 
 ## Cancel Function Schedule:
 
+stopsound @a record minecraft:clock
+effect clear @p[tag=herobrinemarked] blindness
+
 # Phase 1:
 schedule clear strangecurse:death/herobrine/phase1/phase1m
 

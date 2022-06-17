@@ -4,9 +4,7 @@
 ## Death Initiate:
 scoreboard players set deathIP_sc VariablesI 1
 scoreboard players set dCountClose VariablesI 0
-
-## Sounds:
-stopsound @s
+effect give @p[tag=herobrinemarked] unluck 200 1 true
 
 ## Portal Placement:
 

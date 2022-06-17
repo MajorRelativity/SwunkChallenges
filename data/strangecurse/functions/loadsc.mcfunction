@@ -34,7 +34,6 @@ schedule clear strangecurse:death/herobrine/phase2/phase2m
 # - dCountClose is used in counting during the closing of the portal
 # - dCountSculk is used in counting during the closing of the portal
 
-# DummyNumber is a collection of comparison numbers
 scoreboard objectives add VariablesI dummy
 scoreboard players set deathIP_sc VariablesI 0
 scoreboard players set dair_sc VariablesI 1
@@ -42,10 +41,6 @@ scoreboard players set dCountC VariablesI 0
 scoreboard players set dCountClose VariablesI 0
 scoreboard players set dCountSculk VariablesI 0
 scoreboard players set hCountS VariablesI 0
-
-scoreboard objectives add DummyNumber dummy
-scoreboard players set one DummyNumber 1
-
 
 ## Test Purposes:
 #scoreboard objectives setdisplay sidebar VariablesI

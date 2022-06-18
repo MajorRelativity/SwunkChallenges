@@ -12,8 +12,8 @@ execute at @p[tag=herobrinemarked] run playsound minecraft:entity.wither.break_b
 execute at @p[tag=herobrinemarked] run particle minecraft:explosion ~ ~ ~ .2 .2 .2 3 30
 
 ## Kill Player
-#kill @p[tag=herobrinemarked]
-#tag @p[tag=herobrinemarked] remove herobrinemarked
+execute as @p[tag=herobrinemarked] run function strangecurse:death/herobrine/phase4/removeplayertags
+
 
 ## Modify Armor Stand:
 schedule function strangecurse:death/herobrine/phase4/pose1 2s

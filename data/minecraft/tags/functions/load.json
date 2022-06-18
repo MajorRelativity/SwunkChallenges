@@ -1,7 +1,7 @@
 {
     "values": [
-        "challengescontrol:load"
-
+        "challengescontrol:load",
+        "math:zprivate/init"
     ]
 
 }

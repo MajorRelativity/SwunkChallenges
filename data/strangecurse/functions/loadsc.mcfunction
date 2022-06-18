@@ -34,6 +34,10 @@ schedule clear strangecurse:death/herobrine/phase2/phase2m
 # - dCountClose is used in counting during the closing of the portal
 # - dCountSculk is used in counting during the closing of the portal
 
+# Kills tracks all entity and player kills for a player. This should not be reset on load.
+
+# Time after murder tracks how long the tag murderer has been on a player
+
 scoreboard objectives add VariablesI dummy
 scoreboard players set deathIP_sc VariablesI 0
 scoreboard players set dair_sc VariablesI 1
@@ -41,6 +45,13 @@ scoreboard players set dCountC VariablesI 0
 scoreboard players set dCountClose VariablesI 0
 scoreboard players set dCountSculk VariablesI 0
 scoreboard players set hCountS VariablesI 0
+
+scoreboard objectives add kills totalKillCount
+
+scoreboard objectives add timeAfterMurder dummy
+
+## Start Loops:
+schedule function strangecurse:loop60 10s
 
 ## Test Purposes:
 #scoreboard objectives setdisplay sidebar VariablesI

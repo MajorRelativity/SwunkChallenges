@@ -29,6 +29,9 @@ execute if score @s VariablesI matches 7 at @s align xyz run summon area_effect_
 ## Add Blocks:
 execute if score @s VariablesI matches 1..6 as @s run function strangecurse:death/alignportal/addblocks
 
+## Forceload Area:
+execute at @s run forceload add ~-5 ~-5 ~5 ~5
+
 ## Run Loop and Schedule Stop:
 function strangecurse:death/alignportal/runportalloop
 schedule function strangecurse:death/closeportal/preclose1 25s

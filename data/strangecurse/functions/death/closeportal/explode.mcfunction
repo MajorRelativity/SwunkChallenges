@@ -46,6 +46,9 @@ function strangecurse:death/closeportal/sculk
 execute at @s run particle minecraft:explosion ~ ~ ~ .2 .2 .2 3 30
 execute at @s run summon creeper ~ ~ ~ {ExplosionRadius:10,Fuse:0}
 
+## Remove Forceload
+execute at @e[type=armor_stand,name="dportal_sc"] run forceload remove ~-5 ~-5 ~5 ~5
+
 ## Kill Armor Stand:
 kill @e[type=armor_stand,name="dportal_sc"]
 

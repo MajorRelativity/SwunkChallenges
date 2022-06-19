@@ -4,6 +4,9 @@
 ## Cancel Freeze:
 schedule clear strangecurse:death/herobrine/phase4/freezetp
 
+## Forceload Area:
+execute as @p[tag=herobrinemarked] at @s run forceload add ~-5 ~-5 ~5 ~5
+
 ## Initial Summon:
 execute as @p[tag=herobrinemarked] at @s run summon armor_stand ^ ^ ^ {NoGravity:1b,Invulnerable:1b,HasVisualFire:1b,ShowArms:1b,NoBasePlate:1b,CustomName:'{"text":"playerstand"}'}
 execute as @e[type=armor_stand,name="playerstand"] at @s rotated as @p[tag=herobrinemarked] run teleport @s ~ ~ ~ ~ ~

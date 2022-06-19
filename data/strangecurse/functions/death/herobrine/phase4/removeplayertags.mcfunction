@@ -7,6 +7,7 @@ tag @s remove murderer
 
 ## Reset Scores:
 scoreboard players reset @s kills
+scoreboard players reset @s timeAfterMurder
 
 ## Kill Player:
 kill @s

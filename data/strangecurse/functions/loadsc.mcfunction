@@ -24,6 +24,7 @@ scoreboard objectives remove VariablesI
 schedule clear strangecurse:death/alignportal/runportalloop
 schedule clear strangecurse:death/herobrine/phase1/phase1m
 schedule clear strangecurse:death/herobrine/phase2/phase2m
+schedule clear strangecurse:death/herobrine/phase3/phase3m
 
 ## Scoreboard Creation:
 # VariablesI is a scoreboard that contains all variables that contain simple information
@@ -53,5 +54,6 @@ scoreboard objectives add timeAfterMurder dummy
 ## Start Loops:
 schedule function strangecurse:loop60 10s
 
-## Test Purposes:
-#scoreboard objectives setdisplay sidebar VariablesI
+## Load Message:
+tellraw @a {"text":"[SC] StrangeCurse has been loaded","color":"dark_red","bold":true}
+tellraw @a {"text":"[SC] Killing is not advisable","color":"dark_red","bold":true}

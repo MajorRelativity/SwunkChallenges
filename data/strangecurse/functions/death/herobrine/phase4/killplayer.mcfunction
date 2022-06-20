@@ -29,7 +29,7 @@ schedule clear strangecurse:death/herobrine/phase3/010102008
 execute at @s run playsound minecraft:entity.enderman.stare master @a ~ ~ ~ 10 1.8
 execute at @s run playsound minecraft:entity.enderman.death master @a ~ ~ ~ 10 1.2
 execute at @s run particle minecraft:large_smoke ~ ~ ~ .1 .1 .1 .1 20 normal 
-kill @s
+kill @e[type=armor_stand,name="herobrine"]
 
 ## Levitation
 

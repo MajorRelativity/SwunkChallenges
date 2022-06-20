@@ -28,3 +28,6 @@ schedule function strangecurse:death/herobrine/phase3/010102005 401t
 schedule function strangecurse:death/herobrine/phase3/010102006 402t
 schedule function strangecurse:death/herobrine/phase3/010102007 403t
 schedule function strangecurse:death/herobrine/phase3/010102008 404t
+
+# Schedule Phase 4 if not done automatically:
+schedule function strangecurse:death/herobrine/phase4/ifescape1to3 50s

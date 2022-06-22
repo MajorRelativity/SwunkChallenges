@@ -1,4 +1,5 @@
-
+## 15
+# Creates the damage settings for light level 15
 
 ## Scoreboard:
 scoreboard players set @s LightSetting 7

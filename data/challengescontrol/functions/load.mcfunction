@@ -17,3 +17,4 @@ execute if score ChallengeNum VariablesC matches 0 run scoreboard players set Ch
 execute if score ChallengeNum VariablesC matches 1 run function strangecurse:loadsc
 execute if score ChallengeNum VariablesC matches 2 run function forbiddenblocks:loadfb
 execute if score ChallengeNum VariablesC matches 3 run function darklife:load
+execute if score ChallengeNum VariablesC matches 4 run function itfollows:load

@@ -1,4 +1,6 @@
 
+## Kill Old Angels
+
 
 ## Run Farfollow:
 
@@ -15,3 +17,7 @@ execute if entity @a[tag=not30k] run function itfollows:farfollow/sortdistance
 
 # Stage 4 - Set Angel Position to 1/2 of distance to player:
 execute as @p[tag=close2angel] run function itfollows:farfollow/setangelposition
+
+# Stage 5 - Set to Close Follow if Angel is Close Enough:
+
+## Restart Loop

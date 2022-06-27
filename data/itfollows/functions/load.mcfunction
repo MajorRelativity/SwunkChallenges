@@ -18,8 +18,14 @@ scoreboard objectives add rposmag dummy
 
 # Dummy Numbers:
 scoreboard objectives add Number dummy
-scoreboard players add 1000 Number 1000
-scoreboard players add 2 Number 2
+scoreboard players set 1000 Number 1000
+scoreboard players set 2 Number 2
+scoreboard players set 8 Number 8
+
+# Variables:
+scoreboard objectives remove VariablesI
+scoreboard objectives add VariablesI dummy
+scoreboard players set countLook VariablesI 0
 
 # angel Score:
 execute unless score angel xval matches ..1 unless score angel xval matches -1.. run scoreboard players set angel xval 0

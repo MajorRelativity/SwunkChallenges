@@ -8,7 +8,5 @@ execute store result entity @s Pos[0] double 1 run scoreboard players get angel 
 execute store result entity @s Pos[1] double 1 run scoreboard players get angel yval
 execute store result entity @s Pos[2] double 1 run scoreboard players get angel zval
 
-## Effects:
-
-execute at @s run particle explosion_emitter ~ ~ ~ 0 0 0 1 5
-execute at @s run playsound entity.warden.emerge master @a ~ ~ ~ 20 2
+# Mark Area
+execute as @s run function itfollows:closefollow/markarea

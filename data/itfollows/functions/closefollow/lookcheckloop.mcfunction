@@ -8,7 +8,10 @@ execute at @e[type=armor_stand,limit=1,name="angel"] as @a[distance=..100] at @s
 ## Count and Run if Count too High:
 # This makes it so that a player can't look at it the whole time
 scoreboard players add countLook VariablesI 1
-execute if score countLook VariablesI matches 8.. if predicate itfollows:random20 run execute as @e[type=armor_stand,sort=nearest,name="angel"] run function itfollows:closefollow/tpangeleffects
+execute if score countLook VariablesI matches 6.. if predicate itfollows:random20 run execute as @e[type=armor_stand,sort=nearest,name="angel"] run function itfollows:closefollow/tpangeleffects
 
 ## Reschedule:
 schedule function itfollows:closefollow/lookcheckloop 15t
+
+## Cancel Loop if Angel Too Far:
+execute as @e[type=armor_stand,sort=nearest,name="angel"] at @s unless entity @e[type=area_effect_cloud,distance=..90,name="angelmarker"] run function itfollows:closefollow/restartloop

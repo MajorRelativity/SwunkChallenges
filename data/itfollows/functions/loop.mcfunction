@@ -1,6 +1,6 @@
 
 ## Kill Old Angels
-
+kill @e[type=armor_stand,name="angel"]
 
 ## Run Farfollow:
 

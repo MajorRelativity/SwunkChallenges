@@ -4,6 +4,7 @@
 ## Scoreboards
 scoreboard objectives add kills totalKillCount
 scoreboard objectives add totalKills dummy
+scoreboard objectives add deaths deathCount
 
 # Night Checker:
 scoreboard objectives remove VariablesI

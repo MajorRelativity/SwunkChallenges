@@ -9,7 +9,8 @@ execute if score night VariablesI matches 0 as @a run function vampirelife:morni
 ## Execute if Daytime or Nighttime
 execute as @a[scores={kills=1..}] unless predicate vampirelife:night run function vampirelife:day
 execute as @a[scores={kills=1..}] if predicate vampirelife:night run function vampirelife:night
-
+execute as @a[scores={deaths=1..}] run function vampirelife:death
+execute unless predicate vampirelife:night as @a[tag=died] run function vampirelife:deatheffects
 
 ## Reschedule Loop
 schedule function vampirelife:loop 1s

@@ -23,6 +23,11 @@ scoreboard objectives remove Number
 # Variables:
 scoreboard objectives remove VariablesI
 
+## Tags:
+tag @a remove close2angel
+tag @a remove not30k
+tag @a remove 30k
+
 ## Clear Schedule
 schedule clear itfollows:loop
 schedule clear itfollows:closefollow/lookcheckloop

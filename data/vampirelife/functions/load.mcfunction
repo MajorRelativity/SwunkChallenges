@@ -21,4 +21,5 @@ gamerule naturalRegeneration false
 schedule function vampirelife:loop 2s
 
 ## Message
-say test
+tellraw @a {"text":"[VL] The Vampire Life challenge has been loaded","color":"red","bold":true}
+tellraw @a {"text":"[VL] You must kill to survive ...","color":"red","bold":true}

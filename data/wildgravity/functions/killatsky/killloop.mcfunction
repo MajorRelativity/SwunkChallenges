@@ -5,4 +5,4 @@ execute as @a[tag=!skydeath] if predicate wildgravity:sky run tag @s add sky
 execute as @a[tag=sky] run function wildgravity:killatsky/killsong
 tag @a[tag=skydeath] remove skydeath
 
-schedule function wildgravity:killatsky/killloop 10s
+schedule function wildgravity:killatsky/killloop 17s

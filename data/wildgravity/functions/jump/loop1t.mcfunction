@@ -2,8 +2,9 @@
 # Checks for if a player sneaks and makes them jump if they do.
 # Jump does not occur unless the player's motion is below the required level for them to be still
 
-## Affirm Levitation
+## Affirm Levitation and Haste
 execute as @a if score @s jumpcooldown matches 12.. run effect give @a levitation 9999 20 true
+effect give @a haste 99999 18 true
 
 ## Get Motion:
 execute as @a store result score @s ymotion run data get entity @s Motion[1] 100000

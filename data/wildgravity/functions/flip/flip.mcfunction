@@ -8,6 +8,7 @@ execute if score Gravity VariablesI matches 0 run function wildgravity:jump/loop
 
 # If Current State is 1:
 execute if score Gravity VariablesI matches 1 run effect clear @a levitation
+execute if score Gravity VariablesI matches 1 run effect clear @a haste
 execute if score Gravity VariablesI matches 1 run schedule clear wildgravity:jump/loop1t
 
 # Switch Gravity Variable:

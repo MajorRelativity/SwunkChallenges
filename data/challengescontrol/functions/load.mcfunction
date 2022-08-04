@@ -13,9 +13,17 @@ tellraw @a {"text": "[+] SwunkChallenges has Loaded"}
 scoreboard objectives add VariablesC dummy
 execute if score ChallengeNum VariablesC matches 0 run scoreboard players set ChallengeNum VariablesC 6
 
-## Strange Curse:
-execute if score ChallengeNum VariablesC matches 1 run function strangecurse:loadsc
-execute if score ChallengeNum VariablesC matches 2 run function forbiddenblocks:loadfb
+## Unload
+execute unless score ChallengeNum VariablesC matches 1 run function strangecurse:unload
+execute unless score ChallengeNum VariablesC matches 2 run function forbiddenblocks:unload
+execute unless score ChallengeNum VariablesC matches 3 run function darklife:unload
+execute unless score ChallengeNum VariablesC matches 4 run function itfollows:unload
+execute unless score ChallengeNum VariablesC matches 5 run function vampirelife:unload
+execute unless score ChallengeNum VariablesC matches 6 run function wildgravity:unload
+
+## Load
+execute if score ChallengeNum VariablesC matches 1 run function strangecurse:load
+execute if score ChallengeNum VariablesC matches 2 run function forbiddenblocks:load
 execute if score ChallengeNum VariablesC matches 3 run function darklife:load
 execute if score ChallengeNum VariablesC matches 4 run function itfollows:load
 execute if score ChallengeNum VariablesC matches 5 run function vampirelife:load

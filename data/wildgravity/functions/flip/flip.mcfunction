@@ -1,5 +1,7 @@
 ## Flip
 # Changes the state of the gravity
+# State 0 = On Floor
+# State 1 = On Ceiling
 
 # If Current State is 0:
 execute if score Gravity VariablesI matches 0 run scoreboard players set @a jumpcooldown 30
@@ -18,3 +20,4 @@ execute if score Gravity VariablesI matches 2.. run scoreboard players set Gravi
 # Message:
 playsound minecraft:block.portal.trigger master @a ~ ~ ~ 10000 1.4
 tellraw @a {"text":"[WG] Gravity flipping","color":"dark_purple"}
+execute if score Gravity VariablesI matches 1 run tellraw @a {"text":"[WG] Use Shift to Jump","color":"dark_purple"}

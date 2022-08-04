@@ -25,4 +25,4 @@ tag @a remove murderer
 tag @a remove herobrinemarked
 
 ## Tellraw:
-tellraw @a {"text":"[&] StrangeCurse has been unloaded","color":"dark_red","bold":true}
+tellraw @a {"text":"[SC] StrangeCurse has been unloaded","color":"dark_red","bold":true}

@@ -1,4 +1,4 @@
-
+##
 
 ## Scoreboards:
 
@@ -32,6 +32,18 @@ execute unless score angel xval matches ..1 unless score angel xval matches -1..
 execute unless score angel yval matches ..1 unless score angel yval matches -1.. run scoreboard players set angel yval 0
 execute unless score angel zval matches ..1 unless score angel zval matches -1.. run scoreboard players set angel zval 0
 execute unless score angel dval matches ..1 unless score angel dval matches -1.. run scoreboard players set angel dval 0
+
+## Remove Angel:
+kill @e[type=armor_stand,name="angel"]
+
+## Schedule:
+
+# Clear:
+schedule clear itfollows:loop
+schedule clear itfollows:closefollow/lookcheckloop
+
+# Start:
+schedule function itfollows:loop 20s
 
 ## Message:
 tellraw @a {"text":"[IF] It Follows Has Been Loaded","color":"light_purple","bold":true}

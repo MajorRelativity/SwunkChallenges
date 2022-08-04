@@ -12,7 +12,7 @@ stopsound @s * minecraft:limbo
 gamerule showDeathMessages false
 kill @s
 gamerule showDeathMessages true
-tellraw @a [{"selector":"@s"},{"text":" flew out of the world"}]
+tellraw @a [{"selector":"@s"},{"text":" failed to understand the gravity of the situation"}]
 
 
 

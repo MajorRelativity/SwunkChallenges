@@ -16,4 +16,4 @@ kill @s
 execute at @e[type=area_effect_cloud,name="angelmarker2"] run forceload remove ~-200 ~-200 ~200 ~200
 
 ## Restart Loop:
-schedule function itfollows:loop 300s
+schedule function itfollows:loop 30s

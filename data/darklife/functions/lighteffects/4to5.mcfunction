@@ -11,6 +11,7 @@ effect clear @s
 # Improved:
 effect give @s haste 99999 1 true
 effect give @s absorption 99999 1 true
+effect give @s night_vision 99999 0 true
 
 # Starts at 4 to 5
 effect give @s strength 99999 0 true

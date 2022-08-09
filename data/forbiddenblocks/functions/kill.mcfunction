@@ -10,7 +10,7 @@ gamerule showDeathMessages false
 gamerule doImmediateRespawn true
 kill @s
 execute at @s if block ~ ~-.9 ~ minecraft:grass_block run tellraw @a [{"selector":"@s"},{"text":" tried to touch grass (fatal mistake)"}]
-execute at @s if block ~ ~-.9 ~ minecraft:stone run tellraw @a [{"selector":"@s"},{"text":" tried to touch stone (fatal mistake)"}]
+execute at @s if block ~ ~-.9 ~ minecraft:netherrack run tellraw @a [{"selector":"@s"},{"text":" tried to touch netherrack (fatal mistake)"}]
 execute at @s if block ~ ~-.9 ~ minecraft:sand run tellraw @a [{"selector":"@s"},{"text":" tried to touch sand (fatal mistake)"}]
 execute at @s if block ~ ~-.9 ~ minecraft:red_sand run tellraw @a [{"selector":"@s"},{"text":" tried to touch red sand (fatal mistake)"}]
 execute at @s if block ~ ~-.9 ~ minecraft:sand run tellraw @a [{"selector":"@s"},{"text":" tried to touch sand (fatal mistake)"}]

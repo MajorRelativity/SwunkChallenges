@@ -12,7 +12,7 @@ effect clear @s
 effect give @s haste 99999 2 true
 effect give @s strength 99999 1 true
 effect give @s absorption 99999 2 true
+effect give @s night_vision 99999 0 true
 
 # Special to 0 to 3
-effect give @s night_vision 99999 0 true
 effect give @s water_breathing 99999 0 true

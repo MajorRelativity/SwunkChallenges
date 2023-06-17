@@ -3,7 +3,7 @@
 # Check if player clicked stick
 # Choose Stick Based On Challenge
 
-## Check For Click:
+## Check For Click and Item in Inventory:
 execute as @r[nbt={Inventory:[{tag:{challengeselector:1b}}]},scores={fungusClick=1}] run function challengescontrol:choosechallenge/choosechallenge
 scoreboard players set @a fungusClick 0
 

@@ -8,9 +8,11 @@ execute as @a if score @s kills matches 5.. run tag @s add murderer
 execute as @a[tag=murderer] run scoreboard players add @s timeAfterMurder 1
 execute as @a[tag=murderer,scores={kills=10..,timeAfterMurder=2..}] run scoreboard players add @s timeAfterMurder 2
 execute as @a[tag=murderer,scores={kills=20..,timeAfterMurder=2..}] run scoreboard players add @s timeAfterMurder 2
-execute as @a[tag=murderer,scores={kills=30..,timeAfterMurder=2..}] run scoreboard players add @s timeAfterMurder 3
+execute as @a[tag=murderer,scores={kills=30..,timeAfterMurder=2..}] run scoreboard players add @s timeAfterMurder 10
 
 # Reduce Kill Number (clemancy):
+execute as @a[scores={kills=0..}] run scoreboard players remove @s kills 1
+execute as @a[tag=!herobrinemarked] if score @s kills matches ..4 run tag @s remove murderer
 
 # Murder Scare:
 execute as @a[scores={timeAfterMurder=1}] run function strangecurse:scare/startscare

@@ -7,4 +7,4 @@
 execute as @r unless score @s VariablesC = ChallengeNum VariablesC run function challengescontrol:clean/clean
 
 ## Loop
-schedule function challengescontrol:clean/cleanloop 60s
+schedule function challengescontrol:clean/cleanloop 120s

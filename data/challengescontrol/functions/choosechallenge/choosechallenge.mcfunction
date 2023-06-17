@@ -1,5 +1,7 @@
 ## ChooseChallenge:
 # Increases the challenge score by 1 and sets do reload to 1
+# Ran by choosechallengeloop
+# Selection System
 
 # Adjust Scoreboard
 

@@ -10,6 +10,8 @@ execute as @a[tag=murderer,scores={kills=10..,timeAfterMurder=2..}] run scoreboa
 execute as @a[tag=murderer,scores={kills=20..,timeAfterMurder=2..}] run scoreboard players add @s timeAfterMurder 2
 execute as @a[tag=murderer,scores={kills=30..,timeAfterMurder=2..}] run scoreboard players add @s timeAfterMurder 3
 
+# Reduce Kill Number (clemancy):
+
 # Murder Scare:
 execute as @a[scores={timeAfterMurder=1}] run function strangecurse:scare/startscare
 execute as @a[scores={timeAfterMurder=2..29,kills=30..}] run function strangecurse:scare/startscare

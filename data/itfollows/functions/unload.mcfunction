@@ -32,5 +32,8 @@ tag @a remove 30k
 schedule clear itfollows:loop
 schedule clear itfollows:closefollow/lookcheckloop
 
+## Kill Angel:
+execute as @e[type=armor_stand,name="angel"] run function itfollows:closefollow/endloop
+
 ## Message:
 tellraw @a {"text":"[IF] It Follows Has Been UnLoaded","color":"light_purple","bold":true}

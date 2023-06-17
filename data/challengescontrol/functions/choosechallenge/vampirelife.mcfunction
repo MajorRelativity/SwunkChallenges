@@ -9,4 +9,4 @@ execute unless score ChallengeNum VariablesC matches 5 run scoreboard players se
 scoreboard players set ChallengeNum VariablesC 5
 
 # Reload
-execute if score doReload VariablesC matches 1 run function challengescontrol:load
+execute if score doReload VariablesC matches 1.. run function challengescontrol:load

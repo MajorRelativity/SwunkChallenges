@@ -1,4 +1,4 @@
-## v0.31
+## v0.32
 ## Credits:
 # - tag "nonsolid.json" taken from Craiy's portal gun datapack. Same with carpets.json.
 # - Particle Generator: https://cloudwolfyt.github.io/pages/gens/particle-plots.html
@@ -13,8 +13,10 @@ tellraw @a {"text": "[+] SwunkChallenges has Loaded"}
 
 ## Scoreboard:
 scoreboard objectives add VariablesC dummy
+scoreboard objectives add fungusClick used:warped_fungus_on_a_stick 
 scoreboard players set doReload VariablesC 0
 execute if score ChallengeNum VariablesC matches 0 run scoreboard players set ChallengeNum VariablesC 1
+scoreboard players operation ChallengeNumT VariablesC = ChallengeNum VariablesC
 
 ## Unload
 execute unless score ChallengeNum VariablesC matches 1 run function strangecurse:unload
@@ -43,3 +45,8 @@ execute if score ChallengeNum VariablesC matches 6 run scoreboard players set @a
 ## Begin Cleanloop:
 schedule clear challengescontrol:clean/cleanloop
 schedule function challengescontrol:clean/cleanloop 10s
+
+## Begin ChooseChallenge:
+schedule function challengescontrol:choosechallenge/choosechallengeloop 5s replace
+
+schedule function challengescontrol:choosechallenge/reloadloop30 5s replace
